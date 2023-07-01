@@ -21,6 +21,10 @@ function isBeepBoop() {
     if (numArray[i] === 1) {
       beepArray.push("BEEP!");
       console.log(numArray[i])
+    } else if (numArray[i] === 2) { 
+      beepArray.push("BOOP!");
+    } else if (numArray[i] === 3) {
+      beepArray.push("WONT YOU BE MY NEIGHBOR");
     } else {
       beepArray.push(numArray[i]);
     }
