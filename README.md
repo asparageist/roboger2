@@ -44,5 +44,11 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 Test: "It should count from 0 up to the user's input."
 Code:
 const numbo = "3"
-function (isInt);
+function (count);
 Expected Output: "0, 1, 2, 3"
+
+Test: "It should change 1 to 'BEEP!' in the array"
+Code:
+const numbo = "3"
+function (isBeepBoop);
+Expected Output: "0, BEEP!, 2, 3"
