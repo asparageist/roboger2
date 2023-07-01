@@ -2,7 +2,7 @@ window.onload = function() {
   // document.querySelector("---------").addEventListener("submit", count);
 };
 
-const numbo = 3;
+const numbo = 13;
 const numArray = [];
 const beepArray = [];
 
@@ -13,21 +13,32 @@ function count() {
     }
   }
   console.log(numArray);
-  isBeepBoop();
+  digits();
 }
 
-function isBeepBoop() {
-  for (i = 0; i <= numbo; i++) {
+function isBeepBoop(num) {
+  for (i = 0; i <= num; i++) {
+    console.log("herebeep");
     if (numArray[i] === 1) {
-      beepArray.push("BEEP!");
+      return "BEEP!";
       console.log(numArray[i])
     } else if (numArray[i] === 2) { 
-      beepArray.push("BOOP!");
+      return "BOOP!";
     } else if (numArray[i] === 3) {
-      beepArray.push("WONT YOU BE MY NEIGHBOR");
+      return "WONT YOU BE MY NEIGHBOR";
     } else {
-      beepArray.push(numArray[i]);
+      return numArray[i];
     }
   }
   console.log(beepArray);
+}
+
+function digits() {
+  for (i = 0; i <= numbo; i++) {
+    let numDigit = String(i);
+    console.log(numDigit);
+    for (ii = 0; ii <= numDigit.length; ii++) {
+      isBeepBoop(ii);
+    }
+  }
 }

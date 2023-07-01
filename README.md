@@ -58,3 +58,9 @@ Code:
 const numbo = "3";
 function (isBeepBoop);
 Expected Output: "0, BEEP!, BOOP!, WONT YOU BE MY NEIGHBOR"
+
+Test: "It should detect whether a targeted integer is in a multiple digit number and react accordingly"
+Code:
+const numbo = "13";
+function (isBeepBoop);
+Expected Output: "0 ... 9, BEEP!, BEEP!, BOOP!, WONT YOU BE MY NEIGHBOR"
