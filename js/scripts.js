@@ -37,8 +37,13 @@ function digits() {
   for (i = 0; i <= numbo; i++) {
     let numDigit = String(i);
     console.log(numDigit);
-    for (ii = 0; ii <= numDigit.length; ii++) {
-      isBeepBoop(ii);
-    }
+    splitDigits(numDigit);
   }
+}
+
+function splitDigits() {
+  for (i = 0; i <= numDigit.length; i++) {
+    isBeepBoop(i);
+  }
+
 }

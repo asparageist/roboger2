@@ -1,0 +1,37 @@
+body {
+  color: white;
+  background-color: black;
+  text-align: center;
+  background-image: url(../img/roboger.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+h1 {
+  margin: 5%;
+  background-color: rgba(0,0,0,0.75);
+  border: 5px solid black;
+  border-radius: 10px;
+}
+
+form {
+  position: absolute;
+  top: 65%;
+  left: 25%;
+  width: 50%;
+  background-color: rgba(0,0,0,0.5);
+  border: 5px solid black;
+  border-radius: 25px;
+}
+
+button {
+  margin: 10px;
+}
+
+textarea {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 5px solid black;
+  border-radius: 25px;
+}
