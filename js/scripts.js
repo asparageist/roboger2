@@ -1,5 +1,5 @@
 window.onload = function() {
-  // document.querySelector("---------").addEventListener("submit", count);
+  // document.querySelector("form#input").addEventListener("submit", count);
 };
 
 const numbo = 13;
@@ -18,32 +18,23 @@ function count() {
 
 function isBeepBoop(num) {
   for (i = 0; i <= num; i++) {
-    console.log("herebeep");
     if (numArray[i] === 1) {
-      return "BEEP!";
-      console.log(numArray[i])
+      beepArray.push("BEEP!");
     } else if (numArray[i] === 2) { 
-      return "BOOP!";
+      beepArray.push("BOOP!");
     } else if (numArray[i] === 3) {
-      return "WONT YOU BE MY NEIGHBOR";
+      beepArray.push("WONT YOU BE MY NEIGHBOR");
     } else {
-      return numArray[i];
+      beepArray.push(numArray[i]);
     }
   }
-  console.log(beepArray);
 }
 
 function digits() {
   for (i = 0; i <= numbo; i++) {
     let numDigit = String(i);
-    console.log(numDigit);
-    splitDigits(numDigit);
+    for (ii = 0; ii <= numDigit.length; ii++) {
+      isBeepBoop(ii);
+    }
   }
-}
-
-function splitDigits() {
-  for (i = 0; i <= numDigit.length; i++) {
-    isBeepBoop(i);
-  }
-
 }
