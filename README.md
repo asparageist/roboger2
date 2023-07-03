@@ -76,3 +76,9 @@ Code:
 more.addEventListener("submit", function(event) {});
 function (reset);
 Expected Output: form#input is reset to original settings
+
+Test: "It should respond accordingly to incorrect input"
+Code:
+const numbo = "hello";
+function (error);
+Expected Output: "Obey me!"
