@@ -1,14 +1,18 @@
 window.onload = function() {
-  // document.querySelector("form#input").addEventListener("submit", makeArray());
+  const nom = document.querySelector("form#input");
+  nom.addEventListener("submit", function(event) {
+    event.preventDefault();
+      const numbo = parseInt(document.querySelector("textarea#input").value);
+      makeArray(numbo);
+  });
 };
 
-const numbo = 13;
 const numArray = [];
 const beepArray = [];
 
-function makeArray() {
+function makeArray(numbo) {
   if (numbo >= 0) {
-    for (i = 0; i <= numbo; i++) {
+    for (let i = 0; i <= numbo; i++) {
       numArray.push(i);
     }
   }
@@ -19,15 +23,19 @@ function makeArray() {
 function isBeepBoop() {
   for (i = 0; i < numArray.length; i++) {
     let digit = numArray[i].toString();
-    if (digit.includes("1")){
-      beepArray.push("BEEP!");
+    if (digit.includes("3")){
+      beepArray.push("WONT YOU BE MY NEIGHBOR!");
     } else if (digit.includes("2")) { 
       beepArray.push("BOOP!");
-    } else if (digit.includes("3")) {
-      beepArray.push("WONT YOU BE MY NEIGHBOR");
+    } else if (digit.includes("1")) {
+      beepArray.push("BEEP!");
     } else {
       beepArray.push(digit);
     }
   }
-  console.log(beepArray);
+  output(beepArray);
+}
+
+function output(beepArray) {
+  document.getElementById("output").innerHTML=beepArray.join(", ");
 }

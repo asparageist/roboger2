@@ -26,7 +26,11 @@ form {
 }
 
 button {
+  color: white;
+  background-color: rgba(0,0,0,0.5);
   margin: 10px;
+  border: 5px solid black;
+  border-radius: 25px;
 }
 
 textarea {

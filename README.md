@@ -64,3 +64,9 @@ Code:
 const numbo = "13";
 function (isBeepBoop);
 Expected Output: "0 ... 9, BEEP!, BEEP!, BOOP!, WONT YOU BE MY NEIGHBOR"
+
+Test: "It should output the results to the DOM"
+Code:
+const numbo = "13";
+function (output);
+Expected Output: label#output is set to "0 ... 9, BEEP!, BEEP!, BOOP!, WONT YOU BE MY NEIGHBOR"
