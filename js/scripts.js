@@ -7,7 +7,6 @@ window.onload = function() {
   nom.addEventListener("click", function() {
     event.preventDefault();
       const numbo = parseInt(document.querySelector("textarea#input").value);
-      console.log(numbo);
       makeArray(numbo);
   });
   more.addEventListener("click", reset);
@@ -19,13 +18,11 @@ const beepArray = [];
 
 function makeArray(numbo) {
   if (isNaN(numbo) || numbo <= 0) {
-    console.log("here");
     error();
-  } else if (numbo >= 0) {
+  } else if (numbo > 0) {
     for (let i = 0; i <= numbo; i++) {
       numArray.push(i);
     }
-  console.log(numArray);
   isBeepBoop();
   }
 }
