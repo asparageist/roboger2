@@ -70,3 +70,9 @@ Code:
 const numbo = "13";
 function (output);
 Expected Output: label#output is set to "0 ... 9, BEEP!, BEEP!, BOOP!, WONT YOU BE MY NEIGHBOR"
+
+Test: "It should reset the form upon completion for repeat uses"
+Code:
+more.addEventListener("submit", function(event) {});
+function (reset);
+Expected Output: form#input is reset to original settings

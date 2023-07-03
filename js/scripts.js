@@ -1,10 +1,14 @@
 window.onload = function() {
-  const nom = document.querySelector("form#input");
-  nom.addEventListener("submit", function(event) {
+  document.getElementById("nom").removeAttribute("class");
+  document.getElementById("more").setAttribute("class", "hidden");
+  const nom = document.querySelector("button#nom");
+  const more = document.querySelector("button#more");
+  nom.addEventListener("click", function() {
     event.preventDefault();
       const numbo = parseInt(document.querySelector("textarea#input").value);
       makeArray(numbo);
   });
+  more.addEventListener("click", reset);
 };
 
 const numArray = [];
@@ -38,4 +42,12 @@ function isBeepBoop() {
 
 function output(beepArray) {
   document.getElementById("output").innerHTML=beepArray.join(", ");
+  document.getElementById("more").removeAttribute("class");
+  document.getElementById("nom").setAttribute("class", "hidden");
+}
+
+function reset() {
+  document.getElementById("output").innerHTML="any number greater than zero";
+  document.getElementById("nom").removeAttribute("class");
+  document.getElementById("more").setAttribute("class", "hidden");
 }
